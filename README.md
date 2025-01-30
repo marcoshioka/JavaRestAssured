@@ -50,7 +50,7 @@ Follow these steps to set up the project on your local machine.
 ### **Steps**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/JavaRestAssured.git
+   git clone https://github.com/marcoshioka/JavaRestAssured.git
    cd JavaRestAssured/restassured
 
 ### **Install Dependencies**
@@ -126,6 +126,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ## **Contact**
 For questions or feedback, please contact:
-- **Your Name**: marcosribeirohioka@gmail.com
+- **Email**: marcosribeirohioka@gmail.com
 - **GitHub**: marcoshioka
 
