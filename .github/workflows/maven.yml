@@ -22,7 +22,7 @@ jobs:
       - name: Set up JDK 15
         uses: actions/setup-java@v3
         with:
-          java-version: '15'  # Use the same Java version as your project
+          java-version: '15'  # Use Java 15 as specified in your pom.xml
           distribution: 'temurin'  # Use Temurin (Adoptium) JDK
 
       # Cache Maven dependencies to speed up the build
