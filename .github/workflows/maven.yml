@@ -1,4 +1,4 @@
-name: Maven Tests with Java and RestAssured 
+name: Maven Tests
 
 # Trigger the workflow on push or pull request events
 on:
@@ -34,14 +34,15 @@ jobs:
           restore-keys: |
             maven-${{ runner.os }}-
 
-      # Run Maven tests
+      # Change to the project directory and run Maven tests
       - name: Run Maven tests
         run: mvn test
+        working-directory: ./restassured  # Change to the project directory
 
       # Upload ExtentReports as an artifact (optional)
       - name: Upload ExtentReports
         uses: actions/upload-artifact@v3
         with:
           name: extent-reports
-          path: target/extent-reports/  # Path to the ExtentReports directory
+          path: restassured/target/extent-reports/  # Path to the ExtentReports directory
           if-no-files-found: warn  # Warn if no files are found
