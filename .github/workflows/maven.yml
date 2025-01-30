@@ -23,7 +23,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '15'  # Use Java 15 as specified in your pom.xml
-          distribution: 'temurin'  # Use Temurin (Adoptium) JDK
+          distribution: 'zulu'  # Use Zulu distribution for Java 15
 
       # Cache Maven dependencies to speed up the build
       - name: Cache Maven dependencies
