@@ -1,0 +1,5 @@
+com/example/PutRequestTest.class
+com/example/utils/ExtentReportManager.class
+com/example/DeleteRequestTest.class
+com/example/GetRequestTest.class
+com/example/PostRequestTest.class
